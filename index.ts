@@ -6,13 +6,12 @@
 
 import { addPreSendListener, removePreSendListener } from "@api/MessageEvents";
 import { definePluginSettings } from "@api/Settings";
-import { Devs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 export default definePlugin({
     name: "Signature message",
     description: "Adds a custom signature text under every message u send.",
-    authors: [Devs.nin1275, Devs.immrb],
+    authors: [{ name: "NIN1275", id: 682553923067838517n }, { name: "immrb.", id: 1141451784162910380n }],
     dependencies: ["MessageEventsAPI"],
     settings: definePluginSettings({
         Enable: {
